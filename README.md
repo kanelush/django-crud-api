@@ -16,7 +16,7 @@ python manage.py createsuperuser
 #Ready to add data
 
 
-### Spanish ###
+### SPANISH ###
 #Paso 1: 
 Create python virtual environment
 python3 -m venv env
