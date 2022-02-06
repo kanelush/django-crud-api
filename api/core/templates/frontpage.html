@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+  <div x-data="{negocios: [], showImages: true}" x-init="negocios = await (await fetch('api/negocios')).json()">
+    <button @click="showImages = !showImages" x-text="showImages ? 'Hide Img' : 'Show Img' "></button>
+  
+    <template x-for="negocio in negocios">
+      <p x-text="'-'+negocio.title + ' ' + negocio.description + ' *id: ' + negocio.id "></p>
+      
+      
+      
+  
+    </template>
+    
+    
+  
+  
+   </div>
+  
+</body>
+</html>
+
+
