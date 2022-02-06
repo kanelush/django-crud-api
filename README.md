@@ -1,11 +1,34 @@
 # django-crud-api
-#Paso 1:Aplicar migraciones
+#Step 1: Create python virtual environment
+
+python3 -m venv env
+Install requirements.txt
+pip install -r requirements.txt
+
+#Step 2: Apply migrations
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+
+#Step 3: Create categories http://localhost:8000/admin/
+
+#Ready to add data
+
+
+
+#Paso 1: 
+Create python virtual environment
+python3 -m venv env
+Instalar requirements.txt
+pip install -r requirements.txt
+
+#Paso 2:Aplicar migraciones
 
 python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
 
-#Paso 2: Crear categoria en localhost:8000/admin/
+#Paso 3: Crear categoria en http://localhost:8000/admin/
 
-#Listo!
+#Listo para añadir datos
 
